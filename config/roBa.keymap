@@ -22,10 +22,10 @@
 
         NUM {
             bindings = <
-&trans  &kp N7  &kp N8  &kp N9  &trans                       &kp JP_AMPS   &kp JP_ASTRK  &kp JP_LPAR   &kp JP_RPAR  &trans
-&trans  &kp N4  &kp N5  &kp N6  &trans  &trans      &trans   &kp JP_UNDER  &kp JP_PLUS   &kp JP_LBRC   &kp JP_RBRC  &trans
-&trans  &kp N1  &kp N2  &kp N3  &trans  &trans      &trans   &kp JP_MINUS  &kp JP_EQUAL  &kp JP_LBKT   &kp JP_RBKT  &trans
-&trans  &kp N0  &kp N0  &kp N0  &trans  &trans      &trans   &trans                                     &trans
+&kp JP_DOT    &kp N7  &kp N8  &kp N9  &kp JP_LPAR                    &kp JP_RPAR  &trans              &trans              &trans               &trans
+&kp JP_COMMA  &kp N4  &kp N5  &kp N6  &kp JP_LBKT  &trans      &trans         &kp JP_RBKT  &trans              &kp LS(UP_ARROW)     &trans               &trans
+&kp JP_BSLH   &kp N1  &kp N2  &kp N3  &kp JP_LBRC  &trans      &trans         &kp JP_RBRC  &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)   &kp LS(RIGHT_ARROW)  &trans
+&trans        &kp N0  &trans  &kp JP_KANA  &trans   &trans      &trans         &trans                                           &trans
             >;
         };
 
