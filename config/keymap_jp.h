@@ -1,5 +1,5 @@
 #define JP_EISU  LANGUAGE_2   // 英数
-#define JP_KANA  LANG1        // かな
+#define JP_KANA  LANGUAGE_1   // かな
 #define JP_MINUS MINUS        // -
 #define JP_CARET EQUAL        // ^
 #define JP_YEN   INT3         // ¥
