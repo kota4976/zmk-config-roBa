@@ -11,16 +11,6 @@
 };
 
 / {
-    behaviors {
-        encoder_msc_down_up: encoder_msc_down_up {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "ENCODER_MSC_DOWN_UP";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-            tap-ms = <20>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -55,10 +45,10 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &kp LEFT_BRACKET      &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                &trans  &trans  &kp F13   &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                &trans  &trans                              &trans
+&trans  &trans  &trans  &trans          &trans                                        &trans  &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &kp LANGUAGE_1  &kp LANGUAGE_2  &kp LEFT_BRACKET      &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
+&trans  &trans  &trans  &trans          &trans          &trans                &trans  &trans  &kp F13   &trans    &trans  &trans
+&trans  &trans  &trans  &trans          &trans          &trans                &trans  &trans                              &trans
             >;
         };
 
