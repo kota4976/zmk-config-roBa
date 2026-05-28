@@ -3,6 +3,8 @@
 #include <dt-bindings/zmk/pointing.h>
 #include "keymap_jp.h"
 
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 80
+
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
@@ -10,9 +12,9 @@
 
 / {
     behaviors {
-        encoder_scroll: encoder_scroll {
+        encoder_msc_down_up: encoder_msc_down_up {
             compatible = "zmk,behavior-sensor-rotate";
-            label = "ENCODER_SCROLL";
+            label = "ENCODER_MSC_DOWN_UP";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
             tap-ms = <20>;
@@ -30,7 +32,7 @@
 &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &lt 3 TAB  &kp LEFT_SHIFT  &lt 1 SPACE         &kp BACKSPACE  &lt 2 ENTER                                &kp DEL
             >;
 
-            sensor-bindings = <&encoder_scroll &encoder_scroll>;
+            sensor-bindings = <&encoder_msc_down_up &encoder_msc_down_up>;
         };
 
         SYM {
