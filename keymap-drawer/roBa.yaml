@@ -8,7 +8,7 @@ layers:
   - T
   - Y
   - U
-  - {t: I, h: Bluetooth}
+  - I
   - O
   - P
   - A
@@ -133,7 +133,7 @@ layers:
   - {t: ▽, type: trans}
   - F12
   FN:
-  - {t: ▽, type: trans}
+  - {t: BT, h: mo}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
